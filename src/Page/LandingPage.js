@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../Component/Navbar";
 import Showcase from "../Component/Showcase";
+import Card from "../Component/Card"
 
 
 
@@ -10,6 +11,7 @@ const LandingPage = () => {
       <div>
         <Navbar />
         <Showcase />
+        <Card />
       </div>
    )
 }

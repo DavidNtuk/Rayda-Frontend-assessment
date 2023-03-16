@@ -3,6 +3,7 @@ import {Typography}  from "@mui/material";
 import {Toolbar}  from "@mui/material";
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
 import IconButton from '@mui/material/Button';
+import { Box } from '@mui/system';
 
 
 
@@ -10,15 +11,6 @@ import IconButton from '@mui/material/Button';
 const Navbar = () => {
 
    return(
-        // <React.Fragment>
-        //     <header>
-        //         <Toolbar sx={{borderBottom:"2px solid #EAECF0",}} >
-        //             <Typography sx={{fontSize:"30px" , fontWeight: "600"}}  variant="h4">Welcome</Typography>
-        //             <Typography sx={{fontSize:"16px" , fontWeight: "400"}}  variant="h4">Your current sales auction and activity</Typography>
-        //             <NotificationsNoneOutlinedIcon sx={{marginLeft:"auto", color: "neutral.lighter"}} />
-        //         </Toolbar>
-        //     </header>
-        // </React.Fragment>
         <React.Fragment>
             <Toolbar sx={{ borderBottom: 1, borderColor: 'divider', margin:'15px 32px',}}>
                 <div>
@@ -45,6 +37,26 @@ const Navbar = () => {
                 </div>
                 <IconButton sx={{marginLeft:"auto", color:'#667085'}}>
                     <NotificationsNoneOutlinedIcon />
+                    <Box sx={{
+                            borderRadius:'16px',
+                            padding:'2px, 8px, 2px, 8px',
+                            width:'24px',
+                            height:'22px',
+                            backgroundColor:'#F04438',
+                            display:'flex',
+                            position:'absolute',
+                            top: '19px',
+                            left:'35px',
+                        }}
+                    >
+                        <Typography
+                            color="#ffffff"
+                            sx={{lineHeight:'18px', fontWeight:'500' , fontSize:'12px', textAlign:'center',padding:'3px 9px'}}
+                        >
+                            2
+                        </Typography>
+
+                    </Box>
                 </IconButton>
             </Toolbar>
         </React.Fragment>

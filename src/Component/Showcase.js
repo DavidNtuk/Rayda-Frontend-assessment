@@ -29,7 +29,7 @@ const Showcase = () => {
                 </div>
             </Paper>
             <Grid container justify='left' spacing={12}>
-                <Grid item md={6} xs={4} sx={{marginLeft:'210px'}} >
+                <Grid item md={5.8} sx={{marginLeft:'210px'}} >
                     <Typography color="inherit" sx={{fontSize:'24px', fontWeight:'600',lineHeight:'32px'}} >
                         Starts in : 3days : 2hours : 24minutes
                     </Typography>
@@ -50,7 +50,6 @@ const Showcase = () => {
                                 height:'6px',
                                 backgroundColor:'#F79009',
                                 display:'flex',
-                                margin:'0px 0px'
                             }}
                             >
                             </Box>
@@ -58,7 +57,7 @@ const Showcase = () => {
                                 Not Live
                             </Typography>
                         </Box>
-                        <Typography color="#475467" paragraph sx={{fontSize:'16px', fontWeight:'400', lineHeight:'24px', marginLeft:'20px'}} >
+                        <Typography color="#475467" sx={{fontSize:'16px', fontWeight:'400', lineHeight:'24px', marginLeft:'10px'}} >
                             Layers Auction
                         </Typography>
                     </div>
