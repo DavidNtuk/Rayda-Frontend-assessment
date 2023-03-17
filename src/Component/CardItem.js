@@ -19,12 +19,12 @@ const CardItem = () => {
     console.log(data)
 
    return(
-        <Grid container spacing={2} position='row' justifyContent='center'>
+        <Grid container spacing={2} position='row' justifyContent='center' alignItems='center'>
             {
                 data &&  data.data.map(({bid, image, name, title }) =>{
                     return(
                         <Grid item>
-                            <Card sx={{ border: 1, borderColor: 'divider', borderRadius: '15px', height:'360px', width:'293.5px', boxShadow: '0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06)', marginTop:'25px'}}>
+                            <Card sx={{ border: 1, borderColor: 'divider', borderRadius: '15px', height:'360px', width:'293.5px', boxShadow: '0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06)', marginTop:'30px'}}>
                                 <CardMedia
                                     sx={{ height: 132, width: 269.5, borderRadius: '15px', margin:'10px'}}
                                     image={image}
@@ -63,7 +63,9 @@ const CardItem = () => {
                                         </Typography>
                                     </div>
                                 </CardContent>
+                                <IconButton>
                                     <Button variant='contained' color='primary' size='large' sx={{fontSize:'10px', fontWeight:'600',boxShadow: '0px 1px 2px rgba(16, 24, 40, 0.05)', width:'269.5px', height:'40px'}} >Add to waitList</Button>
+                                </IconButton>
                             </Card>
                         </Grid>                        
                     )

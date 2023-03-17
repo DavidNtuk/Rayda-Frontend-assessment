@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Button, IconButton, Paper } from '@mui/material';
+import { Button, Paper } from '@mui/material';
 import Box from '@mui/material/Box';
 import content from '../img/Content.png'
 import image from '../img/Image.png'
