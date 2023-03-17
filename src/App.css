@@ -9,7 +9,15 @@
 }
 
 .content img{
-  position: relative;
+  position: absolute;
   top: 130px;
   left: 30px;
+}
+
+
+
+@media (max-width: 768px) {
+  .auction_card_grid{
+    padding-top: 70px;
+  }
 }

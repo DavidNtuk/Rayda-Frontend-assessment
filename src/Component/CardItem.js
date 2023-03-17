@@ -19,7 +19,7 @@ const CardItem = () => {
     console.log(data)
 
    return(
-        <Grid container spacing={2}>
+        <Grid container spacing={2} position='row' justifyContent='center'>
             {
                 data &&  data.data.map(({bid, image, name, title }) =>{
                     return(
@@ -63,9 +63,7 @@ const CardItem = () => {
                                         </Typography>
                                     </div>
                                 </CardContent>
-                                <IconButton>
                                     <Button variant='contained' color='primary' size='large' sx={{fontSize:'10px', fontWeight:'600',boxShadow: '0px 1px 2px rgba(16, 24, 40, 0.05)', width:'269.5px', height:'40px'}} >Add to waitList</Button>
-                                </IconButton>
                             </Card>
                         </Grid>                        
                     )
