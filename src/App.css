@@ -14,6 +14,43 @@
   left: 30px;
 }
 
+/* Header Styling Start */
+
+.border_divider{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12); 
+  margin: 15px 32px;
+}
+
+.nav_text_1{
+  font-weight:600;
+  font-size: 30px;
+  line-height: 38px
+}
+
+.nav_text_2{
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px ;
+  margin-bottom: 15px;
+}
+
+/* Header Styling End */
+
+/* Showcase Styling Start */
+
+.auction_paper{
+  background-image: url('./img/Image.png');
+  position: relative;
+  height: 200px ;
+  margin-bottom: 2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+/* Showcase Styling End */
+
 
 
 @media (max-width: 768px) {
